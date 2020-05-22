@@ -1,9 +1,9 @@
 <body>
 <h1>Send-by-Change (14103)</h1>
 <p>Der Baustein realisiert einen Filter, der den Eingangswert auf den 
-Ausgangswert weiterleitet, wenn sich der Eingang um einen %-Mindestwert verändert hat.<br>
+Ausgangswert weiterleitet, wenn sich der Eingang um einen absoluten Mindestwert verändert hat.<br>
 Dabei wird der letzte Wert, der über den Ausgang gesendet wurde als neue "Baseline" verwendet.</p>
-<p>Bsp. für <i>E2 = 10</i>, d.h., die min. Abweichung beträgt 10% vom zuletzt gesendeten Wert:
+<p>Bsp. für <i>E2 = 10</i>, d.h., die min. Abweichung beträgt +-10 vom zuletzt gesendeten Wert:
 <table border=1>
  <tr>
   <td><b>Eingang E1</b></td>
@@ -18,12 +18,12 @@ Dabei wird der letzte Wert, der über den Ausgang gesendet wurde als neue "Baseli
   <td></td>
  </tr>
  <tr>
-  <td>81</td>
+  <td>80</td>
   <td></td>
  </tr>
  <tr>
-  <td>80</td>
-  <td>80</td>
+  <td>79</td>
+  <td>79</td>
  </tr>
 </table>
 </p>
@@ -42,9 +42,9 @@ Dabei wird der letzte Wert, der über den Ausgang gesendet wurde als neue "Baseli
   <td>Wert, der bei Änderung weitergeleitet wird</td>
  </tr>
  <tr>
-  <td>E2 Mind. %-Änderung</td>
+  <td>E2 Mind. Änderung</td>
   <td>10</td>
-  <td>Mindest-Abweichung des Wertes an E1 vom zuletzt über A1 gesendeten Wert in %, damit dieser ausgegeben wird.<br>
+  <td>Mindest-Abweichung des Wertes an E1 vom zuletzt über A1 gesendeten Wert, damit dieser ausgegeben wird.<br>
   Bei '0' wird der Eingang bei jeder Änderung auf den Ausgang gesendet.</td>
  </tr> 
 </table>
@@ -78,7 +78,12 @@ Dabei wird der letzte Wert, der über den Ausgang gesendet wurde als neue "Baseli
 
 <h3>Change Log</h3>
 <ul>
-  <li>v0.04
+  <li>v0.06
+    <ul>
+	  <li>Wechsel auf HSL 2</li>
+	</ul>
+  </li>
+  <li>...
     <ul>
 	  <li>?</li>
 	</ul>
